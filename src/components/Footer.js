@@ -4,7 +4,7 @@ import "../App"
 function Footer() {
     return(
         <div className="footer">
-            <p>Books App</p>
+            <p>Books App 2022&copy;</p>
         </div>
     )
 }
