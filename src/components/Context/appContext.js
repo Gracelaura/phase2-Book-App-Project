@@ -19,12 +19,21 @@ function AppContextProvider({children}) {
     const [favorites, setFavorites] = useState([])
 
 
-    function addToFavorites() {
+    function addToFavorites(book) {
+        const oldFavorites = [...favorites]
 
+        const newFavorites = oldFavorites.concat(book)
+
+        setFavorites(newFavorites)
     }
 
     function removeFromFavorites(id) {
 
+        const oldFavorites = [...favorites]
+
+        const newFavorites = oldFavorites.filter((book) => book.id !== id)
+
+        setFavorites(newFavorites)
     }
 
 
