@@ -1,11 +1,10 @@
 import React, {useState, useEffect} from "react";
 import "../App"
-import {useNavigate} from "react-router-dom"
 
 
 function BookList() {
     const[books, setBooks] = useState([])
-    const navigate = useNavigate()
+    
     
 
     function fetchData() {
@@ -26,7 +25,7 @@ function BookList() {
                     <h4>{book.title}</h4>
                 </div>
                 <div>
-                    <img src={book.image_url} alt="#" onClick={() => navigate('/books/${book.id}')}/>
+                    <img src={book.image_url} alt="#" />
                 </div>
                 <div>
                     <button>Add to Favorites</button>
