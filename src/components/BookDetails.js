@@ -15,23 +15,23 @@ function BookDetails() {
 
     useEffect(() => {
         fetchData()
-    }, [id])
+    },)
 
 
 
     return(
     <div className="book-details">
         <div className="book-image">
-            <h2>{book.title}</h2>
-            <img src={book.image_url} alt="#" />
+            <h2>{book?.title}</h2>
+            <img src={book?.image_url} alt="#" />
         </div>
         <div className="book-description">
             <h2>Description</h2>
-            <p>{book.description}</p>
+            <p>{book?.description}</p>
             <h2>Authors</h2>
-            <p>{book.authors}</p>
+            <p>{book?.authors}</p>
             <h2>Genres</h2>
-            <p>{book.genres}</p>
+            <p>{book?.genres}</p>
         </div>
     </div>)
 
