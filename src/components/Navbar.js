@@ -8,9 +8,12 @@ function Navbar() {
             <div>
                 <h1>React Books App</h1>
             </div>
-            <div>
+            <div className="nav-content">
                 <Link to="/favorites">
                     <h3>My Favorites</h3>
+                </Link>
+                <Link to='/'>
+                    <h3>Home</h3>
                 </Link>
             </div>
         </div>
