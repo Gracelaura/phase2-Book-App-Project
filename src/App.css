@@ -19,6 +19,11 @@ a{
   justify-content: space-evenly;
 }
 
+.nav-content{
+  display: flex;
+  
+}
+
 .footer{
   width: 100%;
   height: 10vh;
@@ -78,6 +83,14 @@ button{
   font-size: 20px;
   border-radius: 5px;
 }
+
+.btn{
+  border-radius: 10px;
+  width: 100px;
+  background-color: red;
+  font-size: 20px;
+}
+
 
 .favorites{
   min-height: 80vh;
