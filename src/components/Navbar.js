@@ -1,6 +1,6 @@
 import React from "react"
 import "../App"
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 function Navbar() {
     return(
@@ -9,12 +9,15 @@ function Navbar() {
                 <h1>React Books App</h1>
             </div>
             <div className="nav-content">
-                <Link to="/favorites">
+                <NavLink to="/favorites">
                     <h3>My Favorites</h3>
-                </Link>
-                <Link to='/'>
+                </NavLink>
+                <NavLink to='/' activeClassName="activeItem">
                     <h3>Home</h3>
-                </Link>
+                </NavLink>
+                <NavLink to="/addbook">
+                    <h3> Add a book</h3>
+                </NavLink>
             </div>
         </div>
     )
