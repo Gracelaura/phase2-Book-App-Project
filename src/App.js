@@ -6,6 +6,7 @@ import BookDetails from './components/BookDetails';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Favorites from './components/Favorites';
+import AddBookForm from "./components/AddBookForm"
 
 function App() {
   const [myFav, setMyFav] = useState([])
@@ -17,11 +18,11 @@ myFav.includes(book)?setMyFav(myFav):setMyFav(myFav=>[...myFav,book])
   return (
     <div className="App">
       <Navbar />
-      {/* <BookList />  */}
       <Routes>
         <Route path="/" element={<BookList addBookToFav={addBookToFav}/>} />
         <Route path="/book/:id" element={<BookDetails />} />
         <Route path="/favorites" element={<Favorites myFav={myFav} />} />
+        <Route path="/addbook" element={<AddBookForm />} />
       </Routes>
       <Footer />
     </div>
