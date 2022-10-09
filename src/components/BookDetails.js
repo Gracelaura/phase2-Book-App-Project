@@ -11,7 +11,7 @@ function BookDetails() {
 
 
     useEffect(() => {
-        fetch(`http://localhost:8000/books/${id}`)
+        fetch(`https://midnight-api.herokuapp.com/books/${id}`)
             .then(resp => resp.json())
             .then(result => setBook(result))
     }, [id])
