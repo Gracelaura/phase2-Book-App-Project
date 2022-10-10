@@ -12,7 +12,7 @@ function Navbar() {
                 <NavLink to="/favorites">
                     <h3>My Favorites</h3>
                 </NavLink>
-                <NavLink to='/' activeClassName="activeItem">
+                <NavLink to='/'>
                     <h3>Home</h3>
                 </NavLink>
                 <NavLink to="/addbook">
