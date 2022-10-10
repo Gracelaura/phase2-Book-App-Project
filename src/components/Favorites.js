@@ -23,7 +23,7 @@ function Favorites({ myFav }) {
             myFav.map((fav,ind)=>{
                 return (
                     <div key={ind}>
-                        <img src={fav.image_url} alt='book image'/>
+                        <img src={fav.image_url} alt='book'/>
                         <h3>{fav.title}</h3>
                         <p>By:<b>{fav.authors}</b></p>
                     </div>
