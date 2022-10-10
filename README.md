@@ -23,14 +23,14 @@ Book App is a react web application that contains a variety of books. One gets a
 
 ## Description
 
-Book APP is a raect web application that contains a variety of books. A user can get a display of the available books and also add a book of their liking to the display.
+Book APP is a react web application that contains a variety of books. A user can get a display of the available books and also add a book of their liking to the display.
 
 
 
 
 ## Live Demo Link
 
-[GymIT App](https://david-commit.github.io/GymIT/)
+[Book App](https://cozy-otter-43c8b7.netlify.app/)
 
 
 ## Getting Started
@@ -86,7 +86,7 @@ Clone the project using these links depending on your local environment using ht
 - The project requires an internet connection to work because information is fetched from an external source.
 
 ### Deployment
-[Link to deployed work](https://david-commit.github.io/GymIT/)
+[Link to deployed work](https://cozy-otter-43c8b7.netlify.app/)
 
 
 ## Author
